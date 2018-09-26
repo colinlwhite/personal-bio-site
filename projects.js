@@ -42,8 +42,14 @@ const createProjectCards = () => {
 
 createProjectCards();
 
+// START OPTION 1 
 
 // NAVIGATION BAR FUNCTIONING ON CLICK EVENTS
+
+let bioDiv = document.getElementById('bioPage');
+let techDiv = document.getElementById('technologiesPage');
+let projectsDiv = document.getElementById('projectsPage');
+
 
 const grabbing = () => {
     document.getElementById('navToBio').addEventListener('click', showBio);
@@ -52,19 +58,25 @@ const grabbing = () => {
 }
 
 const showBio = () => {
-   
+   bioDiv.style.display = 'block';
+   techDiv.style.display = 'none';
+   projectsDiv.style.display = 'none';
 }
 
 const showTech = () => {
- 
-   
+    techDiv.style.display = 'block';
+    bioDiv.style.display = 'none'; 
+    projectsDiv.style.display = 'none';
 }
 
 const showProjects = () => {
-
+   projectsDiv.style.display = 'block';
+   techDiv.style.display = 'none';
+   bioDiv.style.display = 'none';
    
 }
 
-showBio();
-showTech();
-showProjects();
+grabbing();
+
+// END OPTION 1
+
