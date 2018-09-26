@@ -1,5 +1,3 @@
-console.log('Hello World');
-
 const projects = [
     {
         title: "Cool Project", 
@@ -43,3 +41,30 @@ const createProjectCards = () => {
 }
 
 createProjectCards();
+
+
+// NAVIGATION BAR FUNCTIONING ON CLICK EVENTS
+
+const grabbing = () => {
+    document.getElementById('navToBio').addEventListener('click', showBio);
+    document.getElementById('navToTechnologies').addEventListener('click', showTech);
+    document.getElementById('navToProjects').addEventListener('click', showProjects);
+}
+
+const showBio = () => {
+   
+}
+
+const showTech = () => {
+ 
+   
+}
+
+const showProjects = () => {
+
+   
+}
+
+showBio();
+showTech();
+showProjects();
