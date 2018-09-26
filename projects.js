@@ -1,7 +1,14 @@
-console.log('Hello World');
-
 const projects = [
     {
+        title: "Cool Project", 
+        screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+        description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
+        technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+        available: true,
+        url: "https://github.com/nss-evening-cohort-8/js-part-deux", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
+        githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
+      },
+      {
         title: "Cool Project", 
         screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
         description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
@@ -34,3 +41,42 @@ const createProjectCards = () => {
 }
 
 createProjectCards();
+
+// START OPTION 1 
+
+// NAVIGATION BAR FUNCTIONING ON CLICK EVENTS
+
+let bioDiv = document.getElementById('bioPage');
+let techDiv = document.getElementById('technologiesPage');
+let projectsDiv = document.getElementById('projectsPage');
+
+
+const grabbing = () => {
+    document.getElementById('navToBio').addEventListener('click', showBio);
+    document.getElementById('navToTechnologies').addEventListener('click', showTech);
+    document.getElementById('navToProjects').addEventListener('click', showProjects);
+}
+
+const showBio = () => {
+   bioDiv.style.display = 'block';
+   techDiv.style.display = 'none';
+   projectsDiv.style.display = 'none';
+}
+
+const showTech = () => {
+    techDiv.style.display = 'block';
+    bioDiv.style.display = 'none'; 
+    projectsDiv.style.display = 'none';
+}
+
+const showProjects = () => {
+   projectsDiv.style.display = 'block';
+   techDiv.style.display = 'none';
+   bioDiv.style.display = 'none';
+   
+}
+
+grabbing();
+
+// END OPTION 1
+
