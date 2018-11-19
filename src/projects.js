@@ -86,7 +86,7 @@ import $ from 'jquery';
 const loadProjects = () => {
   $.get('../db/projects.json')
     .done((data) => {
-      console.log(data.projects);
+      console.log(data);
     })
     .fail((error) => {
       console.log(error);
