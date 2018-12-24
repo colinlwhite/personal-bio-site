@@ -1,5 +1,30 @@
+import $ from 'jquery';
 import axios from 'axios';
 import apiKeys from '../../db/apiKeys.json';
+
+// Making the website a SPA
+
+const clickEvents = () => {
+  $('#navToBio').on('click', () => {
+    $('#bioPage').show();
+    $('#technologiesPage').hide();
+    $('#projectsPage').hide();
+  });
+
+  $('#navToTechnologies').on('click', () => {
+    $('#technologiesPage').show();
+    $('#bioPage').hide();
+    $('#projectsPage').hide();
+  });
+
+  $('#navToProjects').on('click', () => {
+    $('#projectsPage').show();
+    $('#bioPage').hide();
+    $('#technologiesPage').hide();
+  });
+};
+
+// Getting the Data
 
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
@@ -23,5 +48,6 @@ const loadProjects = () => new Promise((resolve, reject) => {
     });
 });
 
+clickEvents();
 
 export default loadProjects;
