@@ -1,5 +1,45 @@
+import $ from 'jquery';
 import axios from 'axios';
 import apiKeys from '../../db/apiKeys.json';
+
+// Printing the projects
+
+const projectsPrinter = (projectsArray) => {
+  let theProjects = '';
+  projectsArray.forEach((project) => {
+    theProjects += `
+    <h1>${project.title}</h1>
+    <h1>${project.description}</h1>
+    <h1>${project.technologiesUsed}</h1>
+    `;
+  });
+  $('#projectsPage').html(theProjects);
+};
+
+
+// Making the website a SPA
+
+const clickEvents = () => {
+  $('#navToBio').on('click', () => {
+    $('#bioPage').show();
+    $('#technologiesPage').hide();
+    $('#projectsPage').hide();
+  });
+
+  $('#navToTechnologies').on('click', () => {
+    $('#technologiesPage').show();
+    $('#bioPage').hide();
+    $('#projectsPage').hide();
+  });
+
+  $('#navToProjects').on('click', () => {
+    $('#projectsPage').show();
+    $('#bioPage').hide();
+    $('#technologiesPage').hide();
+  });
+};
+
+// Getting the Data
 
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
@@ -16,12 +56,13 @@ const loadProjects = () => new Promise((resolve, reject) => {
         });
       }
       resolve(allProjectsArray);
-      console.log(allProjectsArray);
+      projectsPrinter(allProjectsArray);
     })
     .catch((err) => {
       reject(err);
     });
 });
 
+clickEvents();
 
 export default loadProjects;
