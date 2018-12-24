@@ -2,6 +2,21 @@ import $ from 'jquery';
 import axios from 'axios';
 import apiKeys from '../../db/apiKeys.json';
 
+// Printing the projects
+
+const projectsPrinter = (projectsArray) => {
+  let theProjects = '';
+  projectsArray.forEach((project) => {
+    theProjects += `
+    <h1>${project.title}</h1>
+    <h1>${project.description}</h1>
+    <h1>${project.technologiesUsed}</h1>
+    `;
+  });
+  $('#projectsPage').html(theProjects);
+};
+
+
 // Making the website a SPA
 
 const clickEvents = () => {
@@ -41,7 +56,7 @@ const loadProjects = () => new Promise((resolve, reject) => {
         });
       }
       resolve(allProjectsArray);
-      console.log(allProjectsArray);
+      projectsPrinter(allProjectsArray);
     })
     .catch((err) => {
       reject(err);
