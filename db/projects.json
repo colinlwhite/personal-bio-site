@@ -1,49 +1,31 @@
 {
     "projects" : {
       "project1": {
-            "title": "Cool Project", 
+            "title": "Firebase To Do", 
             "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
-            "description": "This is the best project", 
+            "description": "This project demonstrated our knowledge of CRUD", 
             "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
             "available": true,
-            "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
-            "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+            "url": "https://fir-todo-cbcea.firebaseapp.com/", 
+            "githubUrl": "https://github.com/colinlwhite/firebase-toDo"
           },
           "project2": {
-            "title": "Cool Project", 
+            "title": "Nutshell Cashews", 
             "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
-            "description": "This is the best project", 
-            "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+            "description": "Here lies our knowledge of Javascript in a nutshell! We demonstrate our knowledge of Axios REST API calls, Firebase, JQuery, vanilla JavaScript, Bootstrap, and SASS", 
+            "technologiesUsed": "HTML, SASS, Firebase, Bootstrap, JQuery, CSS, Vanilla JavaScript, Version Control with Github",
             "available": true,
-            "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
-            "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+            "url": "https://nutshell-cashews.firebaseapp.com/", 
+            "githubUrl": "https://github.com/nss-evening-cohort-8/nutshell-cashews"
           },
           "project3": {
-            "title": "Cool Project", 
+            "title": "Developer Portal", 
             "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
-            "description": "This is the best project", 
+            "description": "A portal to gauge your progress as a junior developer and keep track of resources you are interested in.", 
             "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
             "available": true,
-            "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
-            "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
-          },
-          "project4": { 
-            "title": "Cool Project", 
-            "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
-            "description": "This is the best project", 
-            "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
-            "available": true,
-            "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
-            "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
-          },
-          "project5": {
-            "title": "Cool Project", 
-            "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
-            "description": "This is the best project", 
-            "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
-            "available": true,
-            "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
-            "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+            "url": "https://developer-portal-4cb79.firebaseapp.com/", 
+            "githubUrl": "https://github.com/colinlwhite/developer-portal"
           }
     }
 
