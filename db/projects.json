@@ -26,6 +26,15 @@
             "available": true,
             "url": "https://developer-portal-4cb79.firebaseapp.com/", 
             "githubUrl": "https://github.com/colinlwhite/developer-portal"
+          },
+          "project4": {
+            "title": "COLIN WHITE", 
+            "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
+            "description": "Here lies our knowledge of Javascript in a nutshell! We demonstrate our knowledge of Axios REST API calls, Firebase, JQuery, vanilla JavaScript, Bootstrap, and SASS", 
+            "technologiesUsed": "HTML, SASS, Firebase, Bootstrap, JQuery, CSS, Vanilla JavaScript, Version Control with Github",
+            "available": false,
+            "url": "https://nutshell-cashews.firebaseapp.com/", 
+            "githubUrl": "https://github.com/nss-evening-cohort-8/nutshell-cashews"
           }
     }
 
