@@ -7,11 +7,13 @@ import apiKeys from '../../db/apiKeys.json';
 const projectsPrinter = (projectsArray) => {
   let theProjects = '';
   projectsArray.forEach((project) => {
-    theProjects += `
-    <h1>${project.title}</h1>
-    <h1>${project.description}</h1>
-    <h1>${project.technologiesUsed}</h1>
-    `;
+    if (project.available === true) {
+      theProjects += `
+      <h1>${project.title}</h1>
+      <h1>${project.description}</h1>
+      <h1>${project.technologiesUsed}</h1>
+      `;
+    }
   });
   $('#projectsPage').html(theProjects);
 };
