@@ -8,6 +8,7 @@ const clickEvents = () => {
     $('#technologiesPage').hide();
     $('#projectsPage').hide();
     $('#homeView').hide();
+    $('#homeDiv').show();
   });
 
   $('#navToBio').on('click', () => {
@@ -15,6 +16,7 @@ const clickEvents = () => {
     $('#technologiesPage').hide();
     $('#projectsPage').hide();
     $('#homeView').show();
+    $('#homeDiv').hide();
   });
 
   $('#navToTechnologies').on('click', () => {
@@ -22,6 +24,7 @@ const clickEvents = () => {
     $('#bioPage').hide();
     $('#projectsPage').hide();
     $('#homeView').show();
+    $('#homeDiv').hide();
   });
 
   $('#navToProjects').on('click', () => {
@@ -29,6 +32,7 @@ const clickEvents = () => {
     $('#bioPage').hide();
     $('#technologiesPage').hide();
     $('#homeView').show();
+    $('#homeDiv').hide();
   });
 };
 
