@@ -1,11 +1,12 @@
-import $ from 'jquery';
 import 'bootstrap';
 import './index.scss';
-import loadProjects from './helpers/projects';
+import loadProjects from './helpers/projectData';
+import { createNavbar, clickEvents } from './components/navbar/navbar';
 
 const initializeApp = () => {
-  // $('#tempdiv').html('<h1>This is a test</h1>');
   loadProjects();
+  createNavbar();
+  clickEvents();
 };
 
 initializeApp();
