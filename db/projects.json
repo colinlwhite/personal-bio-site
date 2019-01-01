@@ -2,7 +2,7 @@
     "projects" : {
       "project1": {
             "title": "Firebase To Do", 
-            "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
+            "screenshot": "https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg?w=730&crop=1", 
             "description": "This project demonstrated our knowledge of CRUD", 
             "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
             "available": true,
@@ -11,7 +11,7 @@
           },
           "project2": {
             "title": "Nutshell Cashews", 
-            "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
+            "screenshot": "https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg?w=730&crop=1", 
             "description": "Here lies our knowledge of Javascript in a nutshell! We demonstrate our knowledge of Axios REST API calls, Firebase, JQuery, vanilla JavaScript, Bootstrap, and SASS", 
             "technologiesUsed": "HTML, SASS, Firebase, Bootstrap, JQuery, CSS, Vanilla JavaScript, Version Control with Github",
             "available": true,
@@ -20,7 +20,7 @@
           },
           "project3": {
             "title": "Developer Portal", 
-            "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
+            "screenshot": "https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg?w=730&crop=1", 
             "description": "A portal to gauge your progress as a junior developer and keep track of resources you are interested in.", 
             "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
             "available": true,
@@ -29,7 +29,7 @@
           },
           "project4": {
             "title": "COLIN WHITE", 
-            "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
+            "screenshot": "https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg?w=730&crop=1", 
             "description": "Here lies our knowledge of Javascript in a nutshell! We demonstrate our knowledge of Axios REST API calls, Firebase, JQuery, vanilla JavaScript, Bootstrap, and SASS", 
             "technologiesUsed": "HTML, SASS, Firebase, Bootstrap, JQuery, CSS, Vanilla JavaScript, Version Control with Github",
             "available": false,

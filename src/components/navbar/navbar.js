@@ -1,13 +1,16 @@
 import $ from 'jquery';
+import './navbar.scss';
+import mylogo from '../../images/mylogo.png';
+import 'bootstrap';
 
 // Making the website a SPA
 
 const clickEvents = () => {
-  $('#homeView').on('click', () => {
+  $('#navToHome').on('click', () => {
     $('#bioPage').hide();
     $('#technologiesPage').hide();
     $('#projectsPage').hide();
-    $('#homeView').hide();
+    $('#navToHome').hide();
     $('#homeDiv').show();
   });
 
@@ -15,7 +18,7 @@ const clickEvents = () => {
     $('#bioPage').show();
     $('#technologiesPage').hide();
     $('#projectsPage').hide();
-    $('#homeView').show();
+    $('#navToHome').show();
     $('#homeDiv').hide();
   });
 
@@ -23,7 +26,7 @@ const clickEvents = () => {
     $('#technologiesPage').show();
     $('#bioPage').hide();
     $('#projectsPage').hide();
-    $('#homeView').show();
+    $('#navToHome').show();
     $('#homeDiv').hide();
   });
 
@@ -31,7 +34,7 @@ const clickEvents = () => {
     $('#projectsPage').show();
     $('#bioPage').hide();
     $('#technologiesPage').hide();
-    $('#homeView').show();
+    $('#navToHome').show();
     $('#homeDiv').hide();
   });
 };
@@ -40,24 +43,22 @@ const clickEvents = () => {
 
 const createNavbar = () => {
   const theNavbar = `
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Colin L. White</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <img class="navbar-brand" id="colin" src="${mylogo}" alt="Colin White">
+
+  <div class="collapse navbar-collapse ml-auto" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" id="homeView" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" id="navToHome">HOME</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="navToBio" href="#">Bio</a>
+        <a class="nav-link" id="navToBio">BIO</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="navToTechnologies" href="#">Technologies</a>
+        <a class="nav-link" id="navToTechnologies">TECH</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="navToProjects" href="#">Projects</a>
+        <a class="nav-link" id="navToProjects">PROJECTS</a>
       </li>
     </ul>
   </div>

@@ -3,7 +3,7 @@ import './home.scss';
 
 const homePage = () => {
   const domString = `
-  <h1>console.log('Colin White: ', developer + " and " + Musician);</h1>
+  <h1 id="home-h1">console.log('Colin White: ', developer + " and " + Musician);</h1>
   `;
   $('#homeDiv').html(domString);
 };
