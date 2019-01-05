@@ -18,6 +18,7 @@ import web from '../../images/theweb.png';
 const techPage = () => {
   const techString = `
   <h1 id="tech-header">TECHNOLOGIES</h1>
+  <div id=tech-icons>
   <img id="colinw" src="${ajax}" alt="AJAX">
   <img id="colinw" src="${boot}" alt="Bootstrap">
   <img id="colinw" src="${css}" alt="CSS">
@@ -31,6 +32,7 @@ const techPage = () => {
   <img id="colinw" src="${r}" alt="React">
   <img id="colinw" src="${sass}" alt="SASS">
   <img id="colinw" src="${web}" alt="Webpack">
+  </div>
  `;
   $('#technologiesPage').html(techString);
 };
