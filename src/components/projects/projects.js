@@ -11,7 +11,7 @@ const projectsPrinter = (projectsArray) => {
       <div class="card mb-3" id="project-card">
   <img class="card-img-top" src="${project.screenshot}" alt="Card image cap">
   <div class="card-body">
-    <h2 class="card-title">${project.title}</h2>
+    <h1 class="card-title">${project.title}</h1>
     <p class="card-text">${project.description}</p>
     <p class="card-text">${project.technologiesUsed}</p>
     <a href="${project.githubUrl}" target="_blank"><button class="btn btn-dark">GITHUB</button></a>

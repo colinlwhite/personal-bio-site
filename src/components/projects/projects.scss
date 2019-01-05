@@ -1,6 +1,7 @@
 #projects-header {
   text-align: center;
   padding-top: 70px;
+  font-weight: bold;
 }
 
 .card-body {
@@ -14,4 +15,8 @@ margin: 75px;
 .card-img-top {
   min-width: 800px;
   min-height: 180px;
+}
+
+.card-title {
+  font-weight: bold;
 }

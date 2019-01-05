@@ -1,8 +1,13 @@
 .navbar-brand {
   max-width: 180px;
   max-height: 180px;
+  font-weight: bold;
 }
 
 a.nav-link:hover {
   background-color: silver;
+}
+
+.nav-link {
+  font-weight: bold;
 }
