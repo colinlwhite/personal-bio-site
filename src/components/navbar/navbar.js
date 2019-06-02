@@ -44,11 +44,13 @@ import './navbar.scss';
 //   const theNavbar = `
 //   <nav class="navbar fixed-top navbar-expand-lg navbar-black bg-black">
 //   <a class="navbar-brand">COLIN WHITE</a>
-//   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+//   <button class="navbar-toggler" type="button"
+// data-toggle="collapse" data-target="#navbarSupportedContent"
+// aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 //     <span class="navbar-toggler-icon"></span>
 //   </button>
 //   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-//     <ul class="navbar-nav ml-auto"> 
+//     <ul class="navbar-nav ml-auto">
 //       <li class="nav-item">
 //         <a class="nav-link" id="navToHome">HOME <span class="sr-only">(current)</span></a>
 //       </li>
@@ -71,18 +73,33 @@ import './navbar.scss';
 // export { createNavbar, clickEvents };
 
 const clickEvents = () => {
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<span onclick="openNav()">open</span>
-}
+  $('#openNavMenu').on('click', () => {
+    $('myNav').width('100%');
+    console.log('o the days, it works though');
+  });
+  $('#closeNavMenu').on('click', () => {
+    $('myNav').width('0%');
+    console.log('o the days, it works though');
+  });
+};
 
 const createNavbar = () => {
   const theNavbar = `
-  <div class="overlay-content">
-    <a href="#">HOME</a>
-    <a href="#">BIO</a>
-    <a href="#">TECH</a>
-    <a href="#">PROJECTS</a>
+  <div id="myNav" class="overlay">
+
+    <a href="javascript:void(0)" id="closeNavMenu" class="closebtn" onclick="closeNav()">X</a>
+
+      <div class="overlay-content">
+        <a href="#">HOME</a>
+        <a href="#">BIO</a>
+        <a href="#">TECH</a>
+        <a href="#">PROJECTS</a>
+      </div>
+
   </div>
+
+  <span id="openNavMenu">OPEN</span>
+
   `;
   $('#nav-element').html(theNavbar);
 };
