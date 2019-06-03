@@ -1,6 +1,8 @@
 import $ from 'jquery';
 import 'bootstrap';
 import './navbar.scss';
+import menu from '../../images/menu.png';
+
 
 // Making the website a SPA
 
@@ -38,7 +40,7 @@ import './navbar.scss';
 //   });
 // };
 
-// // The NavBar
+// The NavBar
 
 // const createNavbar = () => {
 //   const theNavbar = `
@@ -74,33 +76,70 @@ import './navbar.scss';
 
 const clickEvents = () => {
   $('#openNavMenu').on('click', () => {
-    $('myNav').width('100%');
-    console.log('o the days, it works though');
+    // $('myNav').width(100);
+    document.getElementById('myNav').style.width = '100%';
   });
   $('#closeNavMenu').on('click', () => {
-    $('myNav').width('0%');
-    console.log('o the days, it works though');
+    // $('myNav').width('0%');
+    document.getElementById('myNav').style.width = '0%';
+  });
+
+  $('#navToHome').on('click', () => {
+    $('#bioPage').hide();
+    $('#technologiesPage').hide();
+    $('#projectsPage').hide();
+    $('#navToHome').hide();
+    $('#homeDiv').show();
+    document.getElementById('myNav').style.width = '0%';
+  });
+
+  $('#navToBio').on('click', () => {
+    $('#bioPage').show();
+    $('#technologiesPage').hide();
+    $('#projectsPage').hide();
+    $('#navToHome').show();
+    $('#homeDiv').hide();
+    document.getElementById('myNav').style.width = '0%';
+  });
+
+  $('#navToTechnologies').on('click', () => {
+    $('#technologiesPage').show();
+    $('#bioPage').hide();
+    $('#projectsPage').hide();
+    $('#navToHome').show();
+    $('#homeDiv').hide();
+    document.getElementById('myNav').style.width = '0%';
+  });
+
+  $('#navToProjects').on('click', () => {
+    $('#projectsPage').show();
+    $('#bioPage').hide();
+    $('#technologiesPage').hide();
+    $('#navToHome').show();
+    $('#homeDiv').hide();
+    document.getElementById('myNav').style.width = '0%';
   });
 };
 
 const createNavbar = () => {
   const theNavbar = `
-  <div id="myNav" class="overlay">
+   <div id="myNav" class="overlay">
 
-    <a href="javascript:void(0)" id="closeNavMenu" class="closebtn" onclick="closeNav()">X</a>
+     <a href="javascript:void(0)" id="closeNavMenu" class="closebtn" onclick="closeNav()">X</a>
 
-      <div class="overlay-content">
-        <a href="#">HOME</a>
-        <a href="#">BIO</a>
-        <a href="#">TECH</a>
-        <a href="#">PROJECTS</a>
-      </div>
+       <div class="overlay-content">
+         <a href="#" id="navToHome">HOME</a>
+         <a href="#" id="navToBio">BIO</a>
+         <a href="#" id="navToTechnologies">TECH</a>
+         <a href="#" id="navToProjects">PROJECTS</a>
+       </div>
 
-  </div>
+   </div>
+   <a class="navbar-brand">COLIN WHITE</a>
+   <span id="openNavMenu"><img id="menu" src="${menu}" alt="menu"></span>
 
-  <span id="openNavMenu">OPEN</span>
 
-  `;
+   `;
   $('#nav-element').html(theNavbar);
 };
 
