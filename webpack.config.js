@@ -1,7 +1,8 @@
 const path = require('path');
+// optional enhancements for webpack
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+// require is generally used by things that are node.js based.
 const env = process.env.NODE_ENV || 'development';
 const isDev = env === 'development';
 const isProd = env === 'production';
@@ -28,32 +29,32 @@ module.exports = {
   ],
   module: {
     rules: [{
-      enforce: 'pre',
-      test: /\.js$/,
-      exclude: /node_modules/,
-      use: 'eslint-loader'
+      enforce: 'pre', // Happens before all the other tasks
+      test: /\.js$/, // Run eslint on all files with an extension of .js
+      exclude: /node_modules/, // That are not in the node_modules folder
+      use: 'eslint-loader' // It's using the eslint-loader package
     }, 
     {
-      test: /\.(png|jp(e*)g|svg)$/,  
+      test: /\.(png|jp(e*)g|svg|mov)$/,  
       use: [{
           loader: 'url-loader',
           options: { 
               limit: 8000, // Convert images < 8kb to base64 strings
-              name: 'images/[hash]-[name].[ext]'
+              // name: 'images/[hash]-[name].[ext]'
           } 
       }]
     },
     {
-      test: /\.js$/,
-      exclude: /node_modules/,
+      test: /\.js$/, // converts all files that w/.js from ES6 to ES5 so old browsers like IE can run our code.
+      exclude: /node_modules/, // That are not in the node_modules folder.
       use: 'babel-loader'
     }, {
-      test: /(\.css|\.scss)$/,
-      exclude: /node_modules/,
-      use: extractScss.extract({
+      test: /(\.css|\.scss)$/, // grabbing all files that end in this
+      exclude: /node_modules/, // except in this folder
+      use: extractScss.extract({ // extract scss plugin for css-loader package
         use:[
-          {loader: 'css-loader'},
-          {loader: 'sass-loader'}
+          {loader: 'css-loader'}, // copying the new CSS files to the build folder
+          {loader: 'sass-loader'} // converting .scss to css
         ],
         fallback: 'style-loader'
       })
