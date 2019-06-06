@@ -18,6 +18,11 @@ const homePage = () => {
   <div class="fullscreen-video-wrap">
 <video src="${vid}" autoplay="true" loop="true"></video>
   </div>
+  <div class="header-overlay">
+  <div>
+  <h1>console.log('Colin White: ', developer + ' and ' + Musician);</h1>
+  </div>
+  </div>
   </header>
   `;
   $('#homeDiv').html(domString);
