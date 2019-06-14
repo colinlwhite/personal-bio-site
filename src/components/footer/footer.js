@@ -1,8 +1,8 @@
-import $ from 'jquery';
-import './footer.scss';
-import email from '../../images/email.svg';
-import linkedin from '../../images/linkedin.png';
-import githublack from '../../images/gitblack.svg';
+// import $ from 'jquery';
+// import './footer.scss';
+// import email from '../../images/email.svg';
+// import linkedin from '../../images/linkedin.png';
+// import githublack from '../../images/gitblack.svg';
 
 // const footerStuff = () => {
 //   const domString = `
