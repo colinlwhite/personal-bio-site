@@ -34,10 +34,15 @@ module.exports = {
       exclude: /node_modules/, // That are not in the node_modules folder
       use: 'eslint-loader' // It's using the eslint-loader package
     }, 
+    // {
+    //   test: /\.mp4$/,
+    //   exclude: /node_modules/,
+    //   use: 'file-loader'
+    // },
     {
-      test: /\.(png|jp(e*)g|svg|mov)$/,  
+      test: /\.(png|jp(e*)g|svg|mov|mp4)$/,  
       use: [{
-          loader: 'url-loader',
+          loader: 'file-loader',
           options: { 
               limit: 8000, // Convert images < 8kb to base64 strings
               // name: 'images/[hash]-[name].[ext]'

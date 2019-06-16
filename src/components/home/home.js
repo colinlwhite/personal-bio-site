@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import './home.scss';
-import vid from './LiftOff.mov';
+// import vid from './LiftOff.mov';
+import vid from './Rocket.mp4';
 
 // const homePage = () => {
 //   const domString = `
@@ -16,7 +17,7 @@ const homePage = () => {
   const domString = `
   <header class="v-header container">
   <div class="fullscreen-video-wrap">
-<video src="${vid}" autoplay="true" loop="true"></video>
+<video src="${vid}" autoplay="true" loop="true" muted="muted"></video>
   </div>
   <div class="header-overlay">
   <div>
