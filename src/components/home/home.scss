@@ -7,7 +7,7 @@
 //   overflow-x: hidden;
 // }
 
-h1 {
+.home-page-header {
   -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 10s; /* Firefox < 16 */
    -ms-animation: fadein 10s; /* Internet Explorer */
@@ -79,11 +79,12 @@ to   { opacity: 1; }
   left: 50%;
 }
 
-.header-overlay {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+//               
 
+@media only screen and (max-width:961px)  { 
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  video {
+    background-color: chartreuse !important;
+    z-index: 4;
+  }
+}

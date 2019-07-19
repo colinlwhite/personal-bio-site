@@ -21,7 +21,7 @@ const homePage = () => {
   </div>
   <div class="header-overlay">
   <div>
-  <h1>console.log('Colin White: ', developer + ' and ' + Musician);</h1>
+  <h1 class="home-page-header">console.log('Colin White: ', developer + ' and ' + Musician);</h1>
   </div>
   </div>
   </header>
