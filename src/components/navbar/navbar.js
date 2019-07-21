@@ -76,7 +76,6 @@ import menu from '../../images/menu.png';
 
 const clickEvents = () => {
   $('#openNavMenu').on('click', () => {
-    // $('myNav').width(100);
     document.getElementById('myNav').style.width = '100%';
   });
   $('#closeNavMenu').on('click', () => {
