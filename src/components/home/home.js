@@ -4,7 +4,7 @@ import './home.scss';
 import vid from './Rocket.mp4';
 
 const homePage = () => {
-  if ($(window).width() >= 961) {
+  if ($(window).width() >= 1024) {
     const domString = `
       <header class="v-header container">
       <div class="fullscreen-video-wrap">
@@ -20,7 +20,9 @@ const homePage = () => {
     $('#homeDiv').html(domString);
   } else {
     const domString = `
+    <div class="mobile-div">
      <h1 id="home-h1">console.log('Colin White: ', developer + ' and ' + Musician);</h1>
+     </div>
      `;
     $('#homeDiv').html(domString);
   }

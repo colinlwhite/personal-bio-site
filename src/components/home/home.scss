@@ -86,3 +86,17 @@ to   { opacity: 1; }
 //     z-index: 4;
 //   }
 // }
+
+// This works, but it only changes to a background color, not a background image 
+#homeDiv {
+  // background-color: slategray; // This works 
+  
+  // background-image: url(/src/images/northern-lights.jpg);
+  // background-image: url(/src/images/github.png);
+  background-image: url(https://assets3.thrillist.com/v1/image/2823279/size/tmg-article_default_mobile.jpg);
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
