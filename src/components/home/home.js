@@ -11,7 +11,7 @@ const homePage = () => {
       </div>
       <div class="header-overlay">
       <div>
-      <h1 class="home-page-header">Colin White</h1>
+      <h1 class="home-page-header">COLIN WHITE</h1>
       </div>
       </div>
       </header>
@@ -19,7 +19,6 @@ const homePage = () => {
     $('#homeDiv').html(domString);
   } else {
     const domString = `
-     <h1 id="home-h1">Colin White</h1>
      `;
     $('#homeDiv').html(domString);
   }
