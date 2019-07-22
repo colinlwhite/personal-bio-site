@@ -8,14 +8,15 @@ const projectsPrinter = (projectsArray) => {
   projectsArray.forEach((project) => {
     if (project.available === true) {
       theProjects += `
-      <div class="card mb-3" id="project-card">
+      <div class="card mb-3 mx-auto" id="project-card" style="width: 50rem;">
   <img class="card-img-top" src="${project.screenshot}" alt="Card image cap">
   <div class="card-body">
     <h1 class="card-title">${project.title}</h1>
     <p class="card-text">${project.description}</p>
-    <p class="card-text">${project.technologiesUsed}</p>
-    <a href="${project.githubUrl}" target="_blank"><button class="btn btn-dark">GITHUB</button></a>
-    <a href="${project.url}" target="_blank"><button class="btn btn-dark"">DEMO</button></a>
+    <p class="card-text"><strong>Technologies Used:</strong> ${project.technologiesUsed}</p>
+    <a href="${project.githubUrl}" target="_blank">GitHub</a>
+
+    <a href="${project.url}" target="_blank">Demo</a>
   </div>
 </div>
       `;

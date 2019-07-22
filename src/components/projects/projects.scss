@@ -13,8 +13,10 @@ margin: 75px;
 }
 
 .card-img-top {
-  min-width: 800px;
-  min-height: 180px;
+  // min-width: 800px;
+  // min-height: 180px;
+  max-width: 800px;
+  max-height: 450px;
 }
 
 .card-title {
