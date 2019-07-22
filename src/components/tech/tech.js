@@ -3,6 +3,7 @@ import 'bootstrap';
 import './tech.scss';
 import ajax from '../../images/AJAX.png';
 import boot from '../../images/BOOT.svg';
+import c from '../../images/csharp.png';
 import css from '../../images/CSS3.png';
 import fb from '../../images/firebase.png';
 import git from '../../images/git.png';
@@ -21,6 +22,7 @@ const techPage = () => {
   <div id=tech-icons>
   <img id="colinw" src="${ajax}" alt="AJAX">
   <img id="colinw" src="${boot}" alt="Bootstrap">
+  <img id="colinw" src="${c}" alt="cSharp">
   <img id="colinw" src="${css}" alt="CSS">
   <img id="colinw" src="${fb}" alt="Firebase">
   <img id="colinw" src="${git}" alt="Git">
