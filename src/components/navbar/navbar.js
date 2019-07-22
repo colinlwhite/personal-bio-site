@@ -89,6 +89,7 @@ const clickEvents = () => {
     $('#projectsPage').hide();
     $('#navToHome').hide();
     $('#homeDiv').show();
+    $('#contactPage').hide();
     document.getElementById('myNav').style.width = '0%';
   });
 
@@ -98,6 +99,7 @@ const clickEvents = () => {
     $('#projectsPage').hide();
     $('#navToHome').show();
     $('#homeDiv').hide();
+    $('#contactPage').hide();
     document.getElementById('myNav').style.width = '0%';
   });
 
@@ -107,6 +109,7 @@ const clickEvents = () => {
     $('#projectsPage').hide();
     $('#navToHome').show();
     $('#homeDiv').hide();
+    $('#contactPage').hide();
     document.getElementById('myNav').style.width = '0%';
   });
 
@@ -115,6 +118,17 @@ const clickEvents = () => {
     $('#bioPage').hide();
     $('#technologiesPage').hide();
     $('#navToHome').show();
+    $('#homeDiv').hide();
+    $('#contactPage').hide();
+    document.getElementById('myNav').style.width = '0%';
+  });
+  // WIP
+  $('#navToContact').on('click', () => {
+    $('#contactPage').show();
+    $('#projectsPage').hide();
+    $('#bioPage').hide();
+    $('#technologiesPage').hide();
+    $('#navToHome').hide();
     $('#homeDiv').hide();
     document.getElementById('myNav').style.width = '0%';
   });
@@ -131,6 +145,7 @@ const createNavbar = () => {
          <a href="#" id="navToBio">BIO</a>
          <a href="#" id="navToTechnologies">TECH</a>
          <a href="#" id="navToProjects">PROJECTS</a>
+         <a href="#" id="navToContact">CONTACT</a>
        </div>
 
    </div>
