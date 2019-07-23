@@ -9,10 +9,10 @@ import contactPage from './components/contact/contact';
 import footerStuff from './components/footer/footer';
 
 const initializeApp = () => {
+  homePage();
   loadProjects();
   createNavbar();
   clickEvents();
-  homePage();
   bioPage();
   techPage();
   contactPage();
