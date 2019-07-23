@@ -20,7 +20,7 @@ const homePage = () => {
       $('#homeDiv').html(domString);
     } else {
       const domString = `
-      <div class="mobile-div"></div>
+  
       `;
       $('#homeDiv').html(domString);
     }
