@@ -4,27 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-    // position: relative;
-    // margin: 0;
-    // padding-bottom: 6rem;
-    // min-height: 100%;
-    background-color: #2d3436;
-    color: white;
-    // font-family: 'Raleway', sans-serif;
-
-    // full screen video 
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
-    overflow-x: hidden;
-}
-
-#nav-element {
-  position: relative;
-  z-index: 3;
-}
-
 // From .header-overlay on home.scss
 #homeDiv {
   height: 100vh;
@@ -34,34 +13,33 @@ body {
   left: 0;
 }
 
+body {
+  background-color: #2d3436;
+  color: white;
+  // Full Screen Video
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+#nav-element {
+  position: relative;
+  z-index: 3;
+}
+
 #bioPage {
-    display: none;
-  }
-  
+  display: none;
+}
+
 #technologiesPage {
-    display: none;
-  }
-  
+  display: none;
+}
+
 #projectsPage {
-    display: none;
-  }
+  display: none;
+}
 
 #contactPage {
-    display: none;
-  }
-
-// footer {
-//     position: absolute;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     padding: 1rem;
-//     text-align: center;
-//     color: black;
-//     background-color: silver;
-// }
-
-// #footer-image {
-//     height: 50px;
-//     width: 50px;
-// }
+  display: none;
+}

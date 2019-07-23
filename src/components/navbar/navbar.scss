@@ -4,15 +4,12 @@
    font-weight: bold;
    margin-top: 45px;
    margin-left: 42px;
+   color: white;
  }
 
-// a.nav-link:hover {
-//   background-color: silver;
-// }
-
-// .nav-link {
-//   font-weight: bold;
-// }
+a:hover {
+  color: #ffda79;
+}
 
 #openNavMenu {
   position: absolute;
@@ -26,7 +23,7 @@
 }
 
 // NEW NAVIGATION BAR CSS 
-
+// https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp 
 // The Overlay (background)
 .overlay {
   // Height & width depends on how you want to reveal the overlay (see JS below)  
@@ -63,7 +60,7 @@
 
 // When you mouse over the navigation links, change their color 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color:#ffda79;
 }
 
 // Position the close button (top right corner) 
