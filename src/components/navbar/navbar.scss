@@ -4,11 +4,12 @@
    font-weight: bold;
    margin-top: 45px;
    margin-left: 42px;
+   color: white;
  }
 
-// a.nav-link:hover {
-//   background-color: silver;
-// }
+a:hover {
+  color: #ffda79;
+}
 
 // .nav-link {
 //   font-weight: bold;
@@ -63,7 +64,7 @@
 
 // When you mouse over the navigation links, change their color 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color:#ffda79;
 }
 
 // Position the close button (top right corner) 
