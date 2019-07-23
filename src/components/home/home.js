@@ -3,7 +3,7 @@ import vid from './Rocket.mp4';
 import './home.scss';
 
 const homePage = () => {
-  $(document).ready(() => {
+  $(window).on('load', () => {
     if ($(window).width() >= 1024) {
       const domString = `
        <header class="v-header container">
