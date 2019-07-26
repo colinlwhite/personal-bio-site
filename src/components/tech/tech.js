@@ -24,7 +24,7 @@ import web from '../../images/theweb.png';
 
 const techPage = () => {
   const techString = `
-  <h1 id="tech-header">TECHNOLOGIES</h1>
+  <h1 id="tech-header">TECH</h1>
   <div id=tech-icons>
   <img id="colinw" src="${ajax}" alt="AJAX">
   <img id="colinw" src="${boot}" alt="Bootstrap">

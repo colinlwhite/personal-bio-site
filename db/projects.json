@@ -10,47 +10,47 @@
         "githubUrl": "https://github.com/colinlwhite/gear-stock"
       },
       "project2": {
+        "title": "Just Do It", 
+        "screenshot": "https://github.com/colinlwhite/firebase-toDo/raw/master/screenshots/Read.png", 
+        "description": "The To Do Application served as an introduction to the four basic functions of persistent storage: create, read, update and delete (CRUD). Axios was used to make HTTP requests and Google's Firebase acted as a persistent realtime database in the cloud.", 
+        "technologiesUsed": "HTML5, CSS, JavaScript, jQuery, Firebase, Webpack, Bootstrap",
+        "available": true,
+        "url": "https://fir-todo-cbcea.firebaseapp.com/", 
+        "githubUrl": "https://github.com/colinlwhite/firebase-toDo"
+      },
+      "project3": {
         "title": "HalfTime", 
-        "screenshot": "https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg?w=730&crop=1", 
-        "description": "HalfTime is an application for band directors and volunteers to manage and track the program’s students, instruments, uniforms and events. This application is currently in progress.", 
+        "screenshot": "https://pbs.twimg.com/media/DN2AG-pV4AEcyVe?format=jpg&name=medium", 
+        "description": "HalfTime is an application for band directors and volunteers to manage and track the program’s students, instruments, uniforms and events. This application is currently in progress and will updated when completed.", 
         "technologiesUsed": "HTML5, CSS, JavaScript, Twilio, Bootstrap 4, React, Recharts, React Search Field, Firebase",
         "available": true,
         "url": "https://github.com/colinlwhite", 
         "githubUrl": "https://github.com/colinlwhite"
       },
-      "project3": {
+      "project4": {
         "title": "Developer Portal", 
         "screenshot": "https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg?w=730&crop=1", 
         "description": "Developer Portal is a way to gauge your progress as a software developer and keep track of resources you are interested in.", 
         "technologiesUsed": "HTML, CSS, JavaScript, Github API",
-        "available": true,
+        "available": false,
         "url": "https://developer-portal-4cb79.firebaseapp.com/", 
         "githubUrl": "https://github.com/colinlwhite/developer-portal"
       },
-      "project4": {
-            "title": "Firebase To Do", 
-            "screenshot": "https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg?w=730&crop=1", 
-            "description": "This project demonstrated our knowledge of CRUD", 
-            "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
-            "available": true,
-            "url": "https://fir-todo-cbcea.firebaseapp.com/", 
-            "githubUrl": "https://github.com/colinlwhite/firebase-toDo"
-          },
-          "project5": {
-            "title": "Wes Bos Drum Kit", 
-            "screenshot": "https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg?w=730&crop=1", 
-            "description": "Here lies our knowledge of Javascript in a nutshell! We demonstrate our knowledge of Axios REST API calls, Firebase, JQuery, vanilla JavaScript, Bootstrap, and SASS", 
-            "technologiesUsed": "HTML5, SASS, Firebase, Bootstrap, JQuery, CSS, Vanilla JavaScript, Version Control with Github",
-            "available": true,
-            "url": "https://github.com/colinlwhite", 
-            "githubUrl": "https://github.com/colinlwhite"
-          },
-          "project6": {
+      "project5": {
             "title": "Parting Pets", 
             "screenshot": "https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg?w=730&crop=1", 
             "description": "Here lies our knowledge of Javascript in a nutshell! We demonstrate our knowledge of Axios REST API calls, Firebase, JQuery, vanilla JavaScript, Bootstrap, and SASS", 
             "technologiesUsed": "HTML5, SASS, Firebase, Bootstrap, JQuery, CSS, Vanilla JavaScript, Version Control with Github",
-            "available": true,
+            "available": false,
+            "url": "https://github.com/partingpets", 
+            "githubUrl": "https://github.com/partingpets"
+          },
+      "project6": {
+            "title": "Drum Kit", 
+            "screenshot": "https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg?w=730&crop=1", 
+            "description": "Here lies our knowledge of Javascript in a nutshell! We demonstrate our knowledge of Axios REST API calls, Firebase, JQuery, vanilla JavaScript, Bootstrap, and SASS", 
+            "technologiesUsed": "HTML5, SASS, Firebase, Bootstrap, JQuery, CSS, Vanilla JavaScript, Version Control with Github",
+            "available": false,
             "url": "https://github.com/partingpets", 
             "githubUrl": "https://github.com/partingpets"
           }
