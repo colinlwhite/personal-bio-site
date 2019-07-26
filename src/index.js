@@ -8,9 +8,9 @@ import techPage from './components/tech/tech';
 import contactPage from './components/contact/contact';
 
 const initializeApp = () => {
-  homePage();
   loadProjects();
   createNavbar();
+  homePage();
   clickEvents();
   bioPage();
   techPage();

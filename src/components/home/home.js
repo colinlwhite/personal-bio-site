@@ -13,6 +13,7 @@ const homePage = () => {
             <div class="header-overlay">
             <div>
                 <h1 class="home-page-header">COLIN WHITE</h1>
+                <h2 class="home-page-header">FULL STACK WEB DEVELOPER</h2>
             </div>
             </div>
        </header>
@@ -20,7 +21,7 @@ const homePage = () => {
       $('#homeDiv').html(domString);
     } else {
       const domString = `
-  
+
       `;
       $('#homeDiv').html(domString);
     }
