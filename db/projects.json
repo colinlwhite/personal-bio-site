@@ -20,12 +20,12 @@
       },
       "project3": {
         "title": "HalfTime", 
-        "screenshot": "https://pbs.twimg.com/media/DN2AG-pV4AEcyVe?format=jpg&name=medium", 
-        "description": "HalfTime is an application for band directors and volunteers to manage and track the program’s students, instruments, uniforms and events. This application is currently in progress and will updated when completed.", 
-        "technologiesUsed": "HTML5, CSS, JavaScript, Twilio, Bootstrap 4, React, Recharts, React Search Field, Firebase",
+        "screenshot": "https://github.com/colinlwhite/HalfTime_FE/raw/master/screenshots/homepage.PNG", 
+        "description": "HalfTime is an application for band directors to manage and track the program’s students, instruments, uniforms and events. Twilio's API allows the primary user to send SMS messages to volunteers about upcoming events.", 
+        "technologiesUsed": "HTML5, CSS, JavaScript, Twilio, Bootstrap 4, React, C#, ASP.Net, Dark Mode",
         "available": true,
-        "url": "https://github.com/colinlwhite", 
-        "githubUrl": "https://github.com/colinlwhite"
+        "url": "https://github.com/colinlwhite/HalfTime_FE", 
+        "githubUrl": "https://github.com/colinlwhite/HalfTime_FE"
       },
       "project4": {
         "title": "Developer Portal", 
