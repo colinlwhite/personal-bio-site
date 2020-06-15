@@ -9,11 +9,10 @@ const bioPage = () => {
   <div>
   <img id="bio-photo" src="${photo}" class="img-fluid d-block mx-auto" alt="Colin White">
   </div>
-  <div id="bioDiv">
-    <p>Full Stack Developer transitioning from the music instruments industry into technology. 
-    I revel that, as Alan Kay once said, "Technology is anything that wasn't around when you were born." 
-    Nashville Software School has positioned me to contribute and upload more than I consume and download. 
-    I am excited to start contributing to the future of the web and technology as a whole.</p>
+  <div id="bioDiv"> 
+    <p>I revel that, as Alan Kay once said, "Technology is anything that wasn't around when you were born." 
+    My recent experiences have positioned me to contribute and upload more than I consume and download. 
+    I am excited to start contributing to the future of the web and technology as a whole.</>
     </div>
     </div>
   `;
