@@ -2,7 +2,7 @@
     "projects" : {
       "project1": {
         "title": "Gear Stock", 
-        "screenshot": "https://github.com/colinlwhite/gear-stock/raw/master/screenshots/Auth.png", 
+        "screenshot": "https://github.com/colinlwhite/gear-stock/blob/master/screenshots/Home.png?raw=true", 
         "description": "Gear Stock is a way for musicians to manage and track the gear, or musical instruments, that they own. Musicians need an app where they can quickly go to see what they have to sell, lend out, its condition, warranty terms, when and where they got it, its value, and does it need to go.", 
         "technologiesUsed": "HTML5, CSS, JavaScript, Bootstrap 4, React, Recharts, React Search Field, Firebase",
         "available": true,

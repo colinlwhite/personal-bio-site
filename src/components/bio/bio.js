@@ -10,9 +10,9 @@ const bioPage = () => {
   <img id="bio-photo" src="${photo}" class="img-fluid d-block mx-auto" alt="Colin White">
   </div>
   <div id="bioDiv"> 
-    <p>I revel that, as Alan Kay once said, "Technology is anything that wasn't around when you were born." 
-    My recent experiences have positioned me to contribute and upload more than I consume and download. 
-    I am excited to start contributing to the future of the web and technology as a whole.</>
+    <p>I am a Software Engineer with two years of experience in the fintech industry. 
+    I am proficient in C#, Angular, SQL, and Kubernetes. 
+    I am a continuous learner who is always striving to improve my skills and add value to the organization I serve.</>
     </div>
     </div>
   `;
