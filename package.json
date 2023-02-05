@@ -21,7 +21,12 @@
     "eslint-plugin-import": "^2.14.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^2.0.0",
+<<<<<<< HEAD
     "html-webpack-plugin": "^2.30.1",
+=======
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^7.0.0",
+>>>>>>> f95639a14fb66391c9e8ebc23b96052a318afef4
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.3",
     "url-loader": "^1.1.2",
@@ -29,12 +34,16 @@
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.2",
     "bootstrap": "^4.1.3",
     "firebase": "^5.5.8",
     "jquery": "^3.5.0",
+<<<<<<< HEAD
     "node-sass": "^8.0.0",
     "npm": "^6.13.4",
+=======
+    "npm": "^9.4.1",
+>>>>>>> f95639a14fb66391c9e8ebc23b96052a318afef4
     "popper.js": "^1.14.4"
   },
   "repository": {
