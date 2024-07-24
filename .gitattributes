@@ -1,0 +1,12 @@
+# Enforce LF line endings for all text files
+* text=auto
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+
+# Treat binary files as binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.svg binary
