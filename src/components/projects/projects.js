@@ -1,13 +1,11 @@
 import $ from 'jquery';
 import './projects.scss';
 
-// Printing the projects
-
 const projectsPrinter = (projectsArray) => {
-  let theProjects = '<h1 id="projects-header">PROJECTS</h1>';
+  let projectsPageHtml = '<h1 id="projects-header">PROJECTS</h1>';
   projectsArray.forEach((project) => {
     if (project.available === true) {
-      theProjects += `
+      projectsPageHtml += `
       <div class="card mb-3 mx-auto" id="project-card" style="width: 50rem;">
   <img class="card-img-top" src="${project.screenshot}" alt="Card image cap">
   <div class="card-body">
@@ -22,7 +20,7 @@ const projectsPrinter = (projectsArray) => {
       `;
     }
   });
-  $('#projectsPage').html(theProjects);
+  $('#projectsPage').html(projectsPageHtml);
 };
 
 export default projectsPrinter;

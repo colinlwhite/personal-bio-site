@@ -2,53 +2,61 @@ import $ from 'jquery';
 import 'bootstrap';
 import './tech.scss';
 import ajax from '../../images/AJAX.png';
-import boot from '../../images/BOOT.svg';
-import c from '../../images/csharp.png';
+import angular from '../../images/angular.png';
+import bootstrap from '../../images/BOOT.svg';
+import cSharp from '../../images/csharp.png';
 import css from '../../images/CSS3.png';
-import fb from '../../images/firebase.png';
+import dotNet from '../../images/dotnet.png';
+import firebase from '../../images/firebase.png';
 import git from '../../images/git.png';
 import github from '../../images/github.png';
-import html5 from '../../images/html.png';
-import jq from '../../images/jquery2.png';
+import html from '../../images/html.png';
+import jquery from '../../images/jquery2.png';
 import js from '../../images/js.jpg';
-import dotnet from '../../images/dotnet.png';
+import kubernetes from '../../images/kubernetes.png';
 import npm from '../../images/npm.png';
 import postman from '../../images/postman.png';
-import r from '../../images/react.png';
+import react from '../../images/react.png';
+import rxjs from '../../images/rxjs.png';
 import sass from '../../images/Sass.png';
-import sqlserver from '../../images/sqlserver.png';
+import sqlServer from '../../images/sqlserver.png';
 import twilio from '../../images/twilio.png';
-import vscode from '../../images/vscode.png';
-import vs from '../../images/visualstudio.png';
-import web from '../../images/theweb.png';
+import typeScript from '../../images/typescript.png';
+import visualStudio from '../../images/visualstudio.png';
+import visualStudioCode from '../../images/vscode.png';
+import webpack from '../../images/theweb.png';
 
 const techPage = () => {
-  const techString = `
-  <h1 id="tech-header">TECH</h1>
-  <div id=tech-icons>
-  <img id="colinw" src="${ajax}" alt="AJAX">
-  <img id="colinw" src="${boot}" alt="Bootstrap">
-  <img id="colinw" src="${c}" alt="cSharp">
-  <img id="colinw" src="${css}" alt="CSS">
-  <img id="colinw" src="${fb}" alt="Firebase">
-  <img id="colinw" src="${git}" alt="Git">
-  <img id="colinw" src="${github}" alt="Github">
-  <img id="colinw" src="${html5}" alt="HTML 5">
-  <img id="colinw" src="${js}" alt="JavaScript">
-  <img id="colinw" src="${jq}" alt="jQuery">
-  <img id="colinw" src="${dotnet}" alt="Microsoft .NET">
-  <img id="colinw" src="${npm}" alt="NPM">
-  <img id="colinw" src="${postman}" alt="Postman">
-  <img id="colinw" src="${r}" alt="React">
-  <img id="colinw" src="${sass}" alt="SASS">
-  <img id="colinw" src="${sqlserver}" alt="SQL Server">
-  <img id="colinw" src="${twilio}" alt="Twilio">
-  <img id="colinw" src="${vscode}" alt="Visual Studio Code">
-  <img id="colinw" src="${vs}" alt="Visual Studio">
-  <img id="colinw" src="${web}" alt="Webpack">
-  </div>
- `;
-  $('#technologiesPage').html(techString);
+  const techPageHtml = `
+    <h1 id="tech-header">TECH</h1>
+    <div id="tech-icons">
+      <img class="tech-icon" src="${ajax}" alt="AJAX">
+      <img class="tech-icon" src="${angular}" alt="Angular">
+      <img class="tech-icon" src="${bootstrap}" alt="Bootstrap">
+      <img class="tech-icon" src="${cSharp}" alt="C#">
+      <img class="tech-icon" src="${css}" alt="CSS">
+      <img class="tech-icon" src="${dotNet}" alt="Microsoft .NET">
+      <img class="tech-icon" src="${firebase}" alt="Firebase">
+      <img class="tech-icon" src="${git}" alt="Git">
+      <img class="tech-icon" src="${github}" alt="GitHub">
+      <img class="tech-icon" src="${html}" alt="HTML 5">
+      <img class="tech-icon" src="${jquery}" alt="jQuery">
+      <img class="tech-icon" src="${js}" alt="JavaScript">
+      <img class="tech-icon" src="${kubernetes}" alt="Kubernetes">
+      <img class="tech-icon" src="${npm}" alt="NPM">
+      <img class="tech-icon" src="${postman}" alt="Postman">
+      <img class="tech-icon" src="${react}" alt="React">
+      <img class="tech-icon" src="${rxjs}" alt="RxJS">
+      <img class="tech-icon" src="${sass}" alt="SASS">
+      <img class="tech-icon" src="${sqlServer}" alt="SQL Server">
+      <img class="tech-icon" src="${twilio}" alt="Twilio">
+      <img class="tech-icon" src="${typeScript}" alt="TypeScript">
+      <img class="tech-icon" src="${visualStudio}" alt="Visual Studio">
+      <img class="tech-icon" src="${visualStudioCode}" alt="Visual Studio Code">
+      <img class="tech-icon" src="${webpack}" alt="Webpack">
+    </div>
+  `;
+  $('#technologiesPage').html(techPageHtml);
 };
 
 export default techPage;
