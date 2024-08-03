@@ -1,7 +1,7 @@
 import $ from 'jquery';
-import email from '../../images/email.svg';
+import email from '../../images/email.png';
 import linkedin from '../../images/linkedin.png';
-import github from '../../images/gitblack.svg';
+import github from '../../images/github.png';
 import './contact.scss';
 
 const contactPage = () => {
