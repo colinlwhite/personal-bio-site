@@ -1,29 +1,29 @@
 import $ from 'jquery';
-import vid from './Rocket.mp4';
+import homePageVideo from './Rocket.mp4';
 import './home.scss';
 
 const homePage = () => {
-  $(document).ready(() => {
+  $(() => {
     if ($(window).width() >= 1024) {
-      const domString = `
-       <header class="v-header container">
-            <div class="fullscreen-video-wrap">
-                <video src="${vid}" autoplay="true" loop="true" muted="muted"></video>
-            </div>
-            <div class="header-overlay">
+      const homePageHtml = `
+        <header class="v-header container">
+          <div class="fullscreen-video-wrap">
+            <video src="${homePageVideo}" autoplay="true" loop="true" muted="muted"></video>
+          </div>
+          <div class="header-overlay">
             <div>
-                <h1 class="home-page-header">COLIN WHITE</h1>
-                <h2 class="home-page-header">FULL STACK WEB DEVELOPER</h2>
+              <h1 class="home-page-header">COLIN L. WHITE</h1>
+              <h2 class="home-page-header">SOFTWARE ENGINEER</h2>
             </div>
-            </div>
-       </header>
+          </div>
+        </header>
        `;
-      $('#homeDiv').html(domString);
+      $('#homeDiv').html(homePageHtml);
     } else {
-      const domString = `
-
+      const homePageHtml = ` 
+        <!-- Empty content for smaller screens -->
       `;
-      $('#homeDiv').html(domString);
+      $('#homeDiv').html(homePageHtml);
     }
   });
 };
