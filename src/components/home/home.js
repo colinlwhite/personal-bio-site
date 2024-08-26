@@ -6,22 +6,22 @@ const homePage = () => {
   $(() => {
     if ($(window).width() >= 1024) {
       const homePageHtml = `
-       <header class="v-header container">
-            <div class="fullscreen-video-wrap">
-                <video src="${homePageVideo}" autoplay="true" loop="true" muted="muted"></video>
-            </div>
-            <div class="header-overlay">
+        <header class="v-header container">
+          <div class="fullscreen-video-wrap">
+            <video src="${homePageVideo}" autoplay="true" loop="true" muted="muted"></video>
+          </div>
+          <div class="header-overlay">
             <div>
-                <h1 class="home-page-header">COLIN L. WHITE</h1>
-                <h2 class="home-page-header">SOFTWARE ENGINEER</h2>
+              <h1 class="home-page-header">COLIN L. WHITE</h1>
+              <h2 class="home-page-header">SOFTWARE ENGINEER</h2>
             </div>
-            </div>
-       </header>
+          </div>
+        </header>
        `;
       $('#homeDiv').html(homePageHtml);
     } else {
-      const homePageHtml = `
-
+      const homePageHtml = ` 
+        <!-- Empty content for smaller screens -->
       `;
       $('#homeDiv').html(homePageHtml);
     }
