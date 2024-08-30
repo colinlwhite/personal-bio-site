@@ -26,29 +26,26 @@ const homePage = () => {
       $('#homeDiv').html(homePageHtml);
     }
 
-    // Spinning Wheel
+    const rolesArray = ['SON', 'VESSEL', 'HUSBAND', 'FATHER', 'BROTHER', 'UNCLE', 'DRUMMER', 'RUNNER', 'REAL ESTATE INVESTOR', 'PROBLEM SOLVER', 'SOFTWARE ENGINEER'];
+    const spinningWheelElement = document.getElementById('spinning-wheel');
 
-    // document.addEventListener("DOMContentLoaded", function() {
-    const words = ['Son', 'Husband', 'Father', 'Brother', 'Uncle', 'Drummer', 'REI', 'Software Engineer'];
-    const spinningWheel = document.getElementById('spinning-wheel');
-
-    let wordIndex = 0;
-    let interval;
-    let speed = 50; // Initial speed (milliseconds)
+    let roleIndex = 0;
+    let setIntervalFunction;
+    let functionDelaySpeed = 50; // Initial function Delay Speed (milliseconds)
 
     function spin() {
-      spinningWheel.textContent = words[wordIndex];
-      wordIndex = (wordIndex + 1) % words.length;
+      spinningWheelElement.textContent = rolesArray[roleIndex];
+      roleIndex = (roleIndex + 1) % rolesArray.length;
     }
 
     function startSpinning() {
-      interval = setInterval(spin, speed);
+      setIntervalFunction = setInterval(spin, functionDelaySpeed);
     }
 
     function stopSpinning() {
-      clearInterval(interval);
+      clearInterval(setIntervalFunction);
       setTimeout(() => {
-        spinningWheel.textContent = 'Software Engineer';
+        spinningWheelElement.textContent = 'SOFTWARE ENGINEER';
       }, 2000); // 2-second delay before displaying the final word
     }
 
@@ -57,13 +54,13 @@ const homePage = () => {
 
     // Gradually slow down the spinning
     setTimeout(() => {
-      clearInterval(interval); speed = 100; startSpinning();
+      clearInterval(setIntervalFunction); functionDelaySpeed = 100; startSpinning();
     }, 1000); // Slow down after 1 second
     setTimeout(() => {
-      clearInterval(interval); speed = 200; startSpinning();
+      clearInterval(setIntervalFunction); functionDelaySpeed = 200; startSpinning();
     }, 2000); // Slow down after 2 seconds
     setTimeout(() => {
-      clearInterval(interval); speed = 400; startSpinning();
+      clearInterval(setIntervalFunction); functionDelaySpeed = 400; startSpinning();
     }, 3000); // Slow down after 3 seconds
     setTimeout(stopSpinning, 4000); // Stop after 4 seconds
     // });
