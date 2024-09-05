@@ -26,12 +26,12 @@ const homePage = () => {
       $('#homeDiv').html(homePageHtml);
     }
 
-    const rolesArray = ['SON', 'VESSEL', 'HUSBAND', 'FATHER', 'BROTHER', 'UNCLE', 'DRUMMER', 'RUNNER', 'REAL ESTATE INVESTOR', 'PROBLEM SOLVER', 'SOFTWARE ENGINEER', 'C# DEVELOPER'];
+    const rolesArray = ['SON', 'VESSEL', 'HUSBAND', 'FATHER', 'BROTHER', 'UNCLE', 'DRUMMER', 'RUNNER', 'REAL ESTATE INVESTOR', 'PROBLEM SOLVER', 'C# DEVELOPER', '.NET DEVELOPER'];
     const spinningWheelElement = document.getElementById('spinning-wheel');
 
     let roleIndex = 0;
     let setIntervalFunction;
-    let functionDelaySpeed = 50; // Initial function Delay Speed (milliseconds)
+    let functionDelaySpeed = 50;
 
     function spin() {
       spinningWheelElement.textContent = rolesArray[roleIndex];
@@ -46,24 +46,30 @@ const homePage = () => {
       clearInterval(setIntervalFunction);
       setTimeout(() => {
         spinningWheelElement.textContent = 'SOFTWARE ENGINEER';
-      }, 1050); // 2-second delay before displaying the final word
+      }, 1050);
     }
 
-    // Start spinning at a fast pace
     startSpinning();
 
-    // Gradually slow down the spinning
     setTimeout(() => {
-      clearInterval(setIntervalFunction); functionDelaySpeed = 100; startSpinning();
-    }, 1000); // Slow down after 1 second
+      clearInterval(setIntervalFunction);
+      functionDelaySpeed = 100;
+      startSpinning();
+    }, 1000);
+
     setTimeout(() => {
-      clearInterval(setIntervalFunction); functionDelaySpeed = 200; startSpinning();
-    }, 2000); // Slow down after 2 seconds
+      clearInterval(setIntervalFunction);
+      functionDelaySpeed = 200;
+      startSpinning();
+    }, 2000);
+
     setTimeout(() => {
-      clearInterval(setIntervalFunction); functionDelaySpeed = 400; startSpinning();
-    }, 3000); // Slow down after 3 seconds
-    setTimeout(stopSpinning, 4000); // Stop after 4 seconds
-    // });
+      clearInterval(setIntervalFunction);
+      functionDelaySpeed = 400;
+      startSpinning();
+    }, 3000);
+
+    setTimeout(stopSpinning, 4000);
   });
 };
 
