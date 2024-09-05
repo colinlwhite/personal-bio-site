@@ -26,7 +26,7 @@ const homePage = () => {
       $('#homeDiv').html(homePageHtml);
     }
 
-    const rolesArray = ['SON', 'VESSEL', 'HUSBAND', 'FATHER', 'BROTHER', 'UNCLE', 'DRUMMER', 'RUNNER', 'REAL ESTATE INVESTOR', 'PROBLEM SOLVER', 'SOFTWARE ENGINEER'];
+    const rolesArray = ['SON', 'VESSEL', 'HUSBAND', 'FATHER', 'BROTHER', 'UNCLE', 'DRUMMER', 'RUNNER', 'REAL ESTATE INVESTOR', 'PROBLEM SOLVER', 'SOFTWARE ENGINEER', 'C# DEVELOPER'];
     const spinningWheelElement = document.getElementById('spinning-wheel');
 
     let roleIndex = 0;
@@ -46,7 +46,7 @@ const homePage = () => {
       clearInterval(setIntervalFunction);
       setTimeout(() => {
         spinningWheelElement.textContent = 'SOFTWARE ENGINEER';
-      }, 2000); // 2-second delay before displaying the final word
+      }, 1050); // 2-second delay before displaying the final word
     }
 
     // Start spinning at a fast pace
