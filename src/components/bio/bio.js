@@ -3,6 +3,23 @@ import 'bootstrap';
 import './bio.scss';
 import bioPhoto from '../../images/profilepicture.jpg';
 
+// Typing effect function
+function typeEffect(element, speed) {
+  const targetElement = element;
+  const text = targetElement.innerHTML;
+  targetElement.innerHTML = ''; // Clear the text first
+  let i = 0;
+
+  const timer = setInterval(() => {
+    if (i < text.length) {
+      targetElement.innerHTML += text.charAt(i);
+      i += 1;
+    } else {
+      clearInterval(timer); // Stop the timer once all text is typed
+    }
+  }, speed);
+}
+
 const bioPage = () => {
   const bioString = `
     <div class="container d-flex flex-column justify-content-center p-5 mt-4">
@@ -17,6 +34,10 @@ const bioPage = () => {
     </div>
   `;
   $('#bioPage').html(bioString);
+
+  // Apply the typing effect after injecting content
+  const bioTextElement = document.getElementById('bioText');
+  typeEffect(bioTextElement, 100); // 100ms per character
 };
 
 export default bioPage;
