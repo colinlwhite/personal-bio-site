@@ -3,41 +3,46 @@ import 'bootstrap';
 import './bio.scss';
 import bioPhoto from '../../images/profilepicture.jpg';
 
-// Typing effect function
-function typeEffect(element, speed) {
-  const targetElement = element;
-  const text = targetElement.innerHTML;
-  targetElement.innerHTML = ''; // Clear the text first
-  let i = 0;
-
-  const timer = setInterval(() => {
-    if (i < text.length) {
-      targetElement.innerHTML += text.charAt(i);
-      i += 1;
-    } else {
-      clearInterval(timer); // Stop the timer once all text is typed
-    }
-  }, speed);
-}
-
 const bioPage = () => {
-  const bioString = `
+// The content that will be typed into the <p> tag
+  const bioTextContent = `
+  I am a Software Engineer with three years of experience in the financial services industry. 
+  I am proficient in C#, .NET Core, Angular, SQL, and Kubernetes. 
+  I am a continuous learner who is always striving to improve my skills and add value to the organization that I serve.
+`;
+
+  // Define the HTML structure for the bio page
+  const bioHTML = `
     <div class="container d-flex flex-column justify-content-center p-5 mt-4">
       <div>
         <img id="bio-photo" src="${bioPhoto}" class="img-fluid d-block mx-auto" alt="Colin White">
       </div>
       <div id="bioDiv"> 
-        <p>I am a Software Engineer with two years of experience in the fintech industry. 
-        I am proficient in C#, Angular, SQL, and Kubernetes. 
-        I am a continuous learner who is always striving to improve my skills and add value to the organization I serve.</p>
+        <p id="bioText"></p> <!-- This starts empty and gets filled dynamically -->
       </div>
     </div>
   `;
-  $('#bioPage').html(bioString);
+    // Inject the HTML into the #bioPage container
+  $('#bioPage').html(bioHTML);
 
-  // Apply the typing effect after injecting content
+  // Function to apply the typing effect
+  function typeEffect(targetElement, textToType, typingSpeed) {
+    let charIndex = 0; // Keep track of which character we're on
+    const elementHolder = targetElement;
+    const typingInterval = setInterval(() => {
+      if (charIndex < textToType.length) {
+        elementHolder.textContent += textToType.charAt(charIndex); // Add one character
+        charIndex += 1; // Move to the next character
+      } else {
+        clearInterval(typingInterval); // Stop once the full text is typed out
+      }
+    }, typingSpeed);
+  }
+  // Get the <p> element where the text will appear
   const bioTextElement = document.getElementById('bioText');
-  typeEffect(bioTextElement, 100); // 100ms per character
+
+  // Start the typing effect with the bio content
+  typeEffect(bioTextElement, bioTextContent, 35); // 35ms per character
 };
 
 export default bioPage;
