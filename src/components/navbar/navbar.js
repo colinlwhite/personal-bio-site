@@ -1,7 +1,6 @@
 import $ from 'jquery';
 import 'bootstrap';
 import './navbar.scss';
-// import bioPage from '../bio/bio';
 import bioPage from '../bio/bio';
 import menuButton from '../../images/menu.png';
 import closeButton from '../../images/close.png';
