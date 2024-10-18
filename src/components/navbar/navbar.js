@@ -2,8 +2,9 @@ import $ from 'jquery';
 import 'bootstrap';
 import './navbar.scss';
 // import bioPage from '../bio/bio';
-import menu from '../../images/menu.png';
-import close from '../../images/close.png';
+import bioPage from '../bio/bio';
+import menuButton from '../../images/menu.png';
+import closeButton from '../../images/close.png';
 
 const clickEvents = () => {
   $('#openNavMenu').on('click', () => {
@@ -28,7 +29,7 @@ const clickEvents = () => {
 
   $('#navToBio').on('click', () => {
     $('#bioPage').show();
-    // bioPage();
+    bioPage();
     $('#technologiesPage').hide();
     $('#projectsPage').hide();
     $('#navToHome').show();
@@ -76,7 +77,7 @@ const createNavbar = () => {
   const theNavbar = `
    <div id="myNav" class="overlay">
 
-     <a href="javascript:void(0)" id="closeNavMenu" class="closebtn" onclick="closeNav()"><img src="${close}"></a>
+     <a href="javascript:void(0)" id="closeNavMenu" class="closebtn" onclick="closeNav()"><img src="${closeButton}"></a>
 
        <div class="overlay-content">
          <a href="#" id="navToHome">HOME</a>
@@ -88,7 +89,7 @@ const createNavbar = () => {
 
    </div>
    <a href="/" class="navbar-brand">COLIN WHITE</a>
-   <span id="openNavMenu"><img id="menu" src="${menu}" alt="menu"></span>
+   <span id="openNavMenu"><img id="menu" src="${menuButton}" alt="menu"></span>
    `;
   $('#nav-element').html(theNavbar);
 };
