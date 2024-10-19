@@ -2,6 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import './navbar.scss';
 import bioPage from '../bio/bio';
+import techPage from '../tech/tech';
 import menuButton from '../../images/menu.png';
 import closeButton from '../../images/close.png';
 
@@ -40,6 +41,7 @@ const clickEvents = () => {
 
   $('#navToTechnologies').on('click', () => {
     $('#technologiesPage').show();
+    techPage();
     $('#bioPage').hide();
     $('#projectsPage').hide();
     $('#navToHome').show();

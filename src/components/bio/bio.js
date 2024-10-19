@@ -3,6 +3,8 @@ import 'bootstrap';
 import './bio.scss';
 import bioPhoto from '../../images/profilepicture.jpg';
 
+const milliSeconds = 35;
+
 const bioPage = () => {
   const bioTextContent = `
   I am a Software Engineer with three years of experience in the financial services industry. 
@@ -38,7 +40,7 @@ const bioPage = () => {
 
   const bioTextTag = document.getElementById('bioText');
 
-  typeEffect(bioTextTag, bioTextContent, 35); // 35ms per character
+  typeEffect(bioTextTag, bioTextContent, milliSeconds);
 };
 
 export default bioPage;
