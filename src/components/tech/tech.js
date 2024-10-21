@@ -26,6 +26,25 @@ import visualStudio from '../../images/visualstudio.png';
 import visualStudioCode from '../../images/vscode.png';
 import webpack from '../../images/theweb.png';
 
+const revealOnScroll = () => {
+  const techIcons = document.querySelectorAll('.tech-icon');
+
+  const revealIcon = () => {
+    techIcons.forEach((icon) => {
+      const iconTop = icon.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (iconTop < windowHeight - 50) {
+        icon.classList.add('reveal');
+      }
+    });
+  };
+
+  // Run on scroll and initial load
+  window.addEventListener('scroll', revealIcon);
+  revealIcon();
+};
+
 const techPage = () => {
   const techPageHtml = `
     <h1 id="tech-header">TECH</h1>
@@ -57,6 +76,8 @@ const techPage = () => {
     </div>
   `;
   $('#technologiesPage').html(techPageHtml);
+
+  revealOnScroll();
 };
 
 export default techPage;

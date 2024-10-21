@@ -1,10 +1,19 @@
 .tech-icon {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   max-width: 300px;
   max-height: 300px;
   padding-top: 0px;
   padding-right: 30px;
   padding-bottom: 50px;
   padding-left: 80px;
+}
+
+// Active class to trigger the reveal
+.tech-icon.reveal {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #tech-header {
@@ -17,3 +26,17 @@
 #tech-icons {
   padding-left: 88px;
 }
+
+// // tech.scss
+
+// .tech-icon {
+//   opacity: 0;
+//   transform: translateY(20px);
+//   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+// }
+
+// // Active class to trigger the reveal
+// .tech-icon.reveal {
+//   opacity: 1;
+//   transform: translateY(0);
+// }
