@@ -40,9 +40,7 @@ const revealOnScroll = () => {
     });
   };
 
-  // Run on scroll and initial load
   window.addEventListener('scroll', revealIcon);
-  // revealIcon();
 };
 
 const techPage = () => {
