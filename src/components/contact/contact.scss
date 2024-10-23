@@ -1,6 +1,21 @@
 .contact-icon {
     height: 200px;
     width: 200px;
+    transition: transform 0.3s ease; 
+}
+
+.contact-icon:hover {
+    transform: scale(1.2); /* Enlarge hovered icon */
+}
+
+/* Shrink other icons when one is hovered */
+#contact-div:hover .contact-icon {
+    transform: scale(0.8); /* Shrink all icons */
+}
+
+/* Keep the hovered icon enlarged */
+#contact-div:hover .contact-icon:hover {
+    transform: scale(1.2); /* Enlarge hovered icon */
 }
 
 #contact-div {
