@@ -8,7 +8,8 @@
     "lint": "eslint ./src --ext .js --fix",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --static dist --hot",
     "start": "npm run lint && npm run dev",
-    "deploy": "npm run build && firebase deploy"
+    "deploy": "npm run build && npm run postbuild && firebase deploy",
+    "postbuild": "cp src/favicon.ico dist/"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
